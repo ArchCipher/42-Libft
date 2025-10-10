@@ -1,2 +1,5 @@
 bonus.stamp
-libft.h.pch
+*.pch
+*.o
+*.a
+*.out
