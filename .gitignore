@@ -3,3 +3,4 @@ bonus.stamp
 *.o
 *.a
 *.out
+my_tests/

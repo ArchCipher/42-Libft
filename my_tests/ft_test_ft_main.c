@@ -9,7 +9,7 @@ int main()
 //	test_memcpy();
 //	test_memccpy();
 //	test_memmove();
-//	test_memchr();
+	test_memchr();
 //	test_memcmp();
 //	test_strlen();
 //	test_strlcpy();
@@ -30,5 +30,5 @@ int main()
 //	test_itoa();
 //	test_strmapi();
 //	test_putnbr_fd();
-	test_lst();
+//	test_lst();
 }

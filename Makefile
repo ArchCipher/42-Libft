@@ -9,7 +9,6 @@ FLAGS		= -Wall -Werror -Wextra
 SFLAGS		= -fsanitize=address
 
 # headers
-HEADERS		= libft.h
 ALL_HEADERS	= -I. -I./my_tests
 
 # source files
