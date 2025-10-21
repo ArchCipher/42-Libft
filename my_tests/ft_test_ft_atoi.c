@@ -20,7 +20,7 @@ void	test_atoi()
 	printf(" ft_atoi: %d\n", ft_atoi("\n2147483647"));
 	printf("std_atoi: %d\n", atoi("\f-2147483648"));
 	printf(" ft_atoi: %d\n", ft_atoi("\f-2147483648"));
-	printf("std_atoi: %d\n", atoi("\r\r-2147483649"));
-	printf(" ft_atoi: %d\n", ft_atoi("\r\r-2147483649"));
+	printf("std_atoi: %d\n", atoi("\r\r-2000000000000000147483649123456789"));
+	printf(" ft_atoi: %d\n", ft_atoi("\r\r-200000000000000147483649123456789"));
 	printf("\n");
 }

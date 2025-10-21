@@ -9,7 +9,7 @@ int main()
 //	test_memcpy();
 //	test_memccpy();
 //	test_memmove();
-	test_memchr();
+//	test_memchr();
 //	test_memcmp();
 //	test_strlen();
 //	test_strlcpy();
@@ -18,7 +18,7 @@ int main()
 //	test_strrchr();
 //	test_strnstr();
 //	test_strncmp();
-//	test_atoi();
+	test_atoi();
 //	test_toupper();
 //	test_tolower();
 //	test_strdup();
