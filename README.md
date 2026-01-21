@@ -54,11 +54,12 @@
 - `isdigit` - Check if character is digit
 - `isalnum` - Check if character is alphanumeric
 - `isascii` - Check if character is ASCII
+- `isspace` - Check if character is whitespace
 - `isprint` - Check if character is printable
 - `toupper` - Convert to uppercase
 - `tolower` - Convert to lowercase
 
-### Additional Functions
+### Non Libc Functions
 
 **String Manipulation:**
 - `substr` - Extract substring from string
@@ -77,17 +78,7 @@
 - `putendl_fd` - Write string with newline to file descriptor
 - `putnbr_fd` - Write number to file descriptor
 
-**Helper Functions:**
-- `isspace` - Check if character is whitespace
-- `numlen` - Calculate number of digits in integer
-
-**Additional String Utilities (Added for minishell):**
-- `strcspn` - Span complement (find characters not in reject set)
-- `strspn` - Span (find characters in accept set)
-- `strtok_r` - Thread-safe string tokenization
-
-### Bonus Functions (Linked Lists)
-
+**Linked List Functions**
 - `lstnew` - Create new list node
 - `lstadd_front` - Add node to beginning of list
 - `lstadd_back` - Add node to end of list
@@ -162,12 +153,6 @@ The project has been tested with:
 - **Memory Safety:** Importance of bounds checking and NULL pointer handling
 - **Code Reusability:** Building a library for use across multiple projects
 - **Makefile Mastery:** Understanding compilation, linking, and library creation
-
----
-
-## Project Status
-
-✅ **Completed** - All mandatory and bonus functions implemented and tested
 
 ---
 
