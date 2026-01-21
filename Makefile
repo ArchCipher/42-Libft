@@ -13,7 +13,7 @@ MSRCS		= \
 			isalpha isdigit isalnum isascii isprint toupper tolower\
 			strlen strlcpy strlcat strchr strrchr strnstr strncmp\
 			memset memcpy bzero memccpy memmove memchr memcmp\
-			atoi strdup calloc
+			atoi strdup calloc strcspn strspn strtok_r
 ASRCS		= \
 			substr strjoin strtrim split itoa strmapi striteri\
 			putchar_fd putstr_fd putendl_fd putnbr_fd 

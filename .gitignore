@@ -4,3 +4,4 @@ bonus.stamp
 *.a
 *.out
 # my_tests/
+.DS_Store/

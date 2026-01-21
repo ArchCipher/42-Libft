@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-size_t	ft_numlen(int n, int base)
+static size_t	ft_numlen(int n, int base)
 {
 	size_t	count;
 

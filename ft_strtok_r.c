@@ -1,26 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_strtok_r.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmurugan <kmurugan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/16 17:58:58 by kmurugan          #+#    #+#             */
-/*   Updated: 2025/10/16 18:49:51 by kmurugan         ###   ########.fr       */
+/*   Created: 2025/12/28 19:44:21 by kmurugan          #+#    #+#             */
+/*   Updated: 2025/12/28 20:39:09 by kmurugan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+char	*ft_strtok_r(char *s, const char *sep, char **p)
 {
-	t_list	*last;
-
-	if (!lst || !new)
-		return ;
-	last = ft_lstlast(*lst);
-	if (!lst)
-		*lst = new;
+	if (!s && !*p)
+		return (NULL);
+	else if (!s)
+		s = *p;
+	while (*s && ft_strchr(sep, *s))
+		s++;
+	if (!*s)
+		return (*p = NULL);
+	*p = s;
+	while (**p && !ft_strchr(sep, **p))
+		(*p)++;
+	if (**p)
+		*(*p)++ = 0;
 	else
-		last->next = new;
+		*p = NULL;
+	return (s);
 }
