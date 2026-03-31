@@ -10,20 +10,22 @@ HEADER		= libft.h
 
 #			Sources
 MSRCS		= \
-			isalpha isdigit isalnum isascii isprint toupper tolower\
-			strlen strlcpy strlcat strchr strrchr strnstr strncmp\
-			memset memcpy bzero memccpy memmove memchr memcmp\
-			atoi strdup calloc strcspn strspn strtok_r
+			atoi atol bzero calloc \
+			isalnum isalpha isascii isdigit isprint isspace \
+			memccpy memchr memcmp memcpy memmove memset \
+			strchr strcspn strdup strlcat strlcpy \
+			strlen strncmp strnstr strrchr strspn strtok_r \
+			tolower toupper
+
 ASRCS		= \
-			substr strjoin strtrim split itoa strmapi striteri\
-			putchar_fd putstr_fd putendl_fd putnbr_fd 
-ESRCS		= \
-			isspace
+			itoa putchar_fd putendl_fd putnbr_fd putstr_fd \
+			split striteri strjoin strmapi strtrim substr
+
 BSRCS		= \
-			lstnew lstadd_front lstsize lstlast lstadd_back\
+			lstnew lstadd_front lstadd_back lstsize lstlast \
 			lstdelone lstclear lstiter lstmap
 
-SRCS		= $(MSRCS) $(ASRCS) $(ESRCS)
+SRCS		= $(MSRCS) $(ASRCS)
 MAN_SRCS	= $(addprefix ft_, $(addsuffix .c, $(SRCS)))
 BONUS_SRCS	= $(addprefix ft_, $(addsuffix .c, $(BSRCS)))
 
