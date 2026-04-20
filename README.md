@@ -26,57 +26,59 @@
 ### Standard Libc Functions
 
 **Memory Functions:**
-- `memset` - Fill memory with a constant byte
-- `memcpy` - Copy memory area
-- `memmove` - Copy memory area (handles overlapping)
+- `bzero` - Zero out memory
+- `calloc` - Allocate and zero-initialize memory
 - `memccpy` - Copy memory until character found
 - `memchr` - Locate character in memory
 - `memcmp` - Compare memory areas
-- `bzero` - Zero out memory
-- `calloc` - Allocate and zero-initialize memory
+- `memcpy` - Copy memory area
+- `memmove` - Copy memory area (handles overlapping)
+- `memset` - Fill memory with a constant byte
 
 **String Functions:**
-- `strlen` - Calculate string length
-- `strlcpy` - Copy string with size limit
-- `strlcat` - Concatenate string with size limit
-- `strchr` - Locate character in string
-- `strrchr` - Locate last occurrence of character
-- `strnstr` - Locate substring in string
-- `strncmp` - Compare strings up to n characters
 - `atoi` - Convert string to integer
-- `strdup` - Duplicate string
+- `atol` - Convert string to long
+- `strchr` - Locate character in string
+- `strcmp` - Compare strings
 - `strcspn` - Find length of initial segment not matching reject set
+- `strdup` - Duplicate string
+- `strlcat` - Concatenate string with size limit
+- `strlcpy` - Copy string with size limit
+- `strlen` - Calculate string length
+- `strncmp` - Compare strings up to n characters
+- `strnstr` - Locate substring in string
+- `strrchr` - Locate last occurrence of character
 - `strspn` - Find length of initial segment matching accept set
 - `strtok_r` - Thread-safe string tokenizer
 
 **Character Classification:**
-- `isalpha` - Check if character is alphabetic
-- `isdigit` - Check if character is digit
 - `isalnum` - Check if character is alphanumeric
+- `isalpha` - Check if character is alphabetic
 - `isascii` - Check if character is ASCII
-- `isspace` - Check if character is whitespace
+- `isdigit` - Check if character is digit
 - `isprint` - Check if character is printable
-- `toupper` - Convert to uppercase
+- `isspace` - Check if character is whitespace
 - `tolower` - Convert to lowercase
+- `toupper` - Convert to uppercase
 
 ### Non Libc Functions
 
 **String Manipulation:**
-- `substr` - Extract substring from string
-- `strjoin` - Concatenate two strings
-- `strtrim` - Trim characters from string
 - `split` - Split string into array of strings
-- `strmapi` - Apply function to each character
 - `striteri` - Apply function with index to each character
+- `strjoin` - Concatenate two strings
+- `strmapi` - Apply function to each character
+- `strtrim` - Trim characters from string
+- `substr` - Extract substring from string
 
 **Number Conversion:**
 - `itoa` - Convert integer to string
 
 **File Descriptor Output:**
 - `putchar_fd` - Write character to file descriptor
-- `putstr_fd` - Write string to file descriptor
 - `putendl_fd` - Write string with newline to file descriptor
 - `putnbr_fd` - Write number to file descriptor
+- `putstr_fd` - Write string to file descriptor
 
 **Linked List Functions**
 - `lstnew` - Create new list node
