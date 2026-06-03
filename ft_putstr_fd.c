@@ -6,7 +6,7 @@
 /*   By: kmurugan <kmurugan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 18:26:41 by kmurugan          #+#    #+#             */
-/*   Updated: 2025/10/16 18:55:54 by kmurugan         ###   ########.fr       */
+/*   Updated: 2026/06/04 00:12:40 by kmurugan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_putstr_fd(char *s, int fd)
 		return ;
 	len = ft_strlen(s);
 	t_written = 0;
-	while(t_written < len)
+	while (t_written < len)
 	{
 		written = write(fd, s + t_written, len - t_written);
 		if (written < 0)

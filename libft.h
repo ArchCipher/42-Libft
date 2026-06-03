@@ -6,7 +6,7 @@
 /*   By: kmurugan <kmurugan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 18:01:41 by kmurugan          #+#    #+#             */
-/*   Updated: 2025/10/17 20:23:11 by kmurugan         ###   ########.fr       */
+/*   Updated: 2026/06/04 00:17:13 by kmurugan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdint.h> // SIZE_MAX
 # include <stdlib.h> // malloc
 # include <unistd.h> // write
+# include <stdbool.h>
 
 typedef struct s_list
 {
